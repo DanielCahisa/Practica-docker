@@ -1,0 +1,157 @@
+.header-cab {
+    background: #ffffff !important;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    
+    margin: 0;
+    padding: 0;
+    border: none;
+    height: auto;
+    box-sizing: border-box;
+    display: block;
+    line-height: normal;
+}
+
+.nav-cab {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: transparent;
+    height: auto;
+    box-sizing: border-box;
+    float: none;
+}
+
+.logo-cab {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.logo-cab a {
+    display: block;
+    border: none;
+    text-decoration: none;
+}
+
+.logo-cab img {
+    height: 38px;
+    width: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.nav-menu-cab {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu-cab li {
+    margin: 0;
+    padding: 0;
+    display: block;
+    border: none;
+}
+
+.nav-menu-cab a {
+    text-decoration: none !important;
+    color: #333 !important;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 0.90rem;
+    transition: color 0.25s ease, border-color 0.25s ease;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-menu-cab a:hover {
+    color: #a0284c !important;
+}
+
+.active-category-cab {
+    border-bottom: 2px solid #a0284c !important;
+    color: #a0284c !important;
+}
+
+.client-area-icon-cab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #a0284c;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background 0.25s ease;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.client-area-icon-cab:hover {
+    background: #7b1d39;
+}
+
+.client-area-icon-cab img {
+    width: 22px;
+    height: 22px;
+    filter: invert(100%);
+    margin: 0;
+    padding: 0;
+}
+
+.button-cab {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.button-cab .link-cab,
+.button-cab .reg-in-cab {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border: 2px solid #a0284c;
+    border-radius: 6px;
+    font-weight: 700;
+    color: #a0284c !important;
+    text-decoration: none !important;
+    transition: 0.25s ease;
+    background: white;
+    font-size: 0.9rem;
+    line-height: normal;
+    margin: 0;
+}
+
+.button-cab .link-cab:hover,
+.button-cab .reg-in-cab:hover {
+    background: #a0284c;
+    color: white !important;
+}
+
+.button-cab button.link-cab {
+    background: #a0284c;
+    color: white !important;
+    border: none;
+    padding: 0.55rem 0.9rem;
+    border-radius: 6px;
+    cursor: default;
+    font-weight: 700;
+    font-family: inherit;
+}
