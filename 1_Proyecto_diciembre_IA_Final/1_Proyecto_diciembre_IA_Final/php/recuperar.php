@@ -30,8 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         
         if ($consultaParaGuardarElToken->execute()) {
             
-            $enlaceParaRestablecerContrasenya = "http://localhost/1_PROYECTO_DICIEMBRE_IA_FINAL/php/restablecer.php?token=" . $tokenUnicoGenerado;
-
+            $enlaceParaRestablecerContrasenya = "http://192.168.56.101:8080/php/restablecer.php?token=" . $tokenUnicoGenerado;
             $mail = new PHPMailer(true);
 
             try {
