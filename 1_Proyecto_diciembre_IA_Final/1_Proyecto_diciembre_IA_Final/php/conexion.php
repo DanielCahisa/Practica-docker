@@ -2,17 +2,17 @@
 // El servidor es el nombre del servicio en docker-compose
 define('SERVIDOR', 'mariadb');
 
-// El usuario que definiste en MYSQL_USER
-define('USUARIO', 'my_user');
+// Usuario de la base de datos de la aplicación
+define('USUARIO', 'admin_asistencia');
 
-// La contraseña que definiste en MYSQL_PASSWORD
-define('PASSWORD', 'my_password');
+// Contraseña segura de la aplicación
+define('PASSWORD', 'SecurePass_Asist_2024!');
 
-// La base de datos que definiste en MYSQL_DATABASE
-define('BASEDEDATOS', 'simple_attendance_db');
+// Nombre de la base de datos
+define('BASEDEDATOS', 'bd_control_asistencia');
 
 $con = new mysqli(SERVIDOR, USUARIO, PASSWORD, BASEDEDATOS);
 if($con->connect_error){
-    die("Conexión fallida: " . $con->connect_error);
+    die("Error crítico de conexión a la base de datos: " . $con->connect_error);
 }
 ?>
